@@ -187,6 +187,9 @@
 #define STATUS               0x19
 
 //dSPIN commands
+#ifdef NOP
+    assert("NOP is already defined" == 0)
+#endif
 #define NOP                  0x00
 #define SET_PARAM            0x00
 #define GET_PARAM            0x20
